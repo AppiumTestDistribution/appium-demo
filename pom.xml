@@ -20,24 +20,17 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-    </repositories>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.appium/java-client -->
         <dependency>
-            <groupId>com.github.appium</groupId>
+            <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>bcd6881efe</version>
+            <version>8.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.6</version>
+            <version>7.5</version>
         </dependency>
     </dependencies>
 </project>
