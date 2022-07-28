@@ -4,7 +4,7 @@
 * Make sure you follow the installation instruction [here](https://github.com/saikrishna321/VodQa_MobileAutomationWorkShop) and configure all the necessary dependencies required.
     * Java 8
     * Maven
-    * Node 12+ installed
+    * Node 16 or node 16+ installed
     * Android Studio
     * Android Emulators created
     * Make sure PATH variables are configured.
