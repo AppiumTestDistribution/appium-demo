@@ -1,0 +1,361 @@
+2022-07-31 07:00:05:738 [Appium] Welcome to Appium v2.0.0-beta.40
+2022-07-31 07:00:05:740 [Appium] Non-default server args:
+2022-07-31 07:00:05:743 [Appium] { basePath: '/wd/hub/', port: 58525 }
+2022-07-31 07:00:05:743 [Appium] Attempting to load driver uiautomator2...
+2022-07-31 07:00:05:745 [Appium] Requiring driver at /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver
+2022-07-31 07:00:08:167 [Appium] Appium REST http interface listener started on 0.0.0.0:58525
+2022-07-31 07:00:08:168 [Appium] Available drivers:
+2022-07-31 07:00:08:168 [Appium]   - uiautomator2@2.4.6 (automationName 'UiAutomator2')
+2022-07-31 07:00:08:168 [Appium] Available plugins:
+2022-07-31 07:00:08:169 [Appium]   - execute-driver@2.0.3
+2022-07-31 07:00:08:169 [Appium]   - element-wait@1.0.0-beta.9
+2022-07-31 07:00:08:173 [Appium] No plugins activated. Use the --use-plugins flag with names of plugins to activate
+2022-07-31 07:00:08:362 [HTTP] --> GET /wd/hub/status
+2022-07-31 07:00:08:362 [HTTP] {}
+2022-07-31 07:00:08:363 [AppiumDriver@c42c] Calling AppiumDriver.getStatus() with args: []
+2022-07-31 07:00:08:364 [AppiumDriver@c42c] Responding to client with driver.getStatus() result: {"build":{"version":"2.0.0-beta.40"}}
+2022-07-31 07:00:08:368 [HTTP] <-- GET /wd/hub/status 200 5 ms - 47
+2022-07-31 07:00:08:369 [HTTP] 
+2022-07-31 07:00:09:344 [HTTP] Request idempotency key: e0fada38-4950-4c77-b262-c1aa9bceb94f
+2022-07-31 07:00:09:361 [HTTP] --> POST /wd/hub/session
+2022-07-31 07:00:09:361 [HTTP] {"capabilities":{"firstMatch":[{}],"alwaysMatch":{"appium:app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Android Emulator","appium:newCommandTimeout":700000,"platformName":"android"}}}
+2022-07-31 07:00:09:361 [AppiumDriver@c42c] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{}],"alwaysMatch":{"appium:app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","appium:automationName":"UIAutomator2","appium:deviceName":"Android Emulator","appium:newCommandTimeout":700000,"platformName":"android"}}]
+2022-07-31 07:00:09:362 [AppiumDriver@c42c] Event 'newSessionRequested' logged at 1659250809362 (12:30:09 GMT+0530 (India Standard Time))
+2022-07-31 07:00:09:366 [Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'android'
+2022-07-31 07:00:09:366 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2022-07-31 07:00:09:366 [Appium] Will require it at /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver
+2022-07-31 07:00:09:366 [Appium] Requiring driver at /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver
+2022-07-31 07:00:09:366 [AppiumDriver@c42c] Appium v2.0.0-beta.40 creating new AndroidUiautomator2Driver (v2.4.6) session
+2022-07-31 07:00:09:367 [AppiumDriver@c42c] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2022-07-31 07:00:09:367 [AppiumDriver@c42c] Appium's BaseDriver version is 8.6.0
+2022-07-31 07:00:09:367 [AppiumDriver@c42c] AndroidUiautomator2Driver's BaseDriver version is 8.6.0
+2022-07-31 07:00:09:371 [AndroidUiautomator2Driver@fe5a] Creating session with W3C capabilities: {
+2022-07-31 07:00:09:371 [AndroidUiautomator2Driver@fe5a]   "alwaysMatch": {
+2022-07-31 07:00:09:371 [AndroidUiautomator2Driver@fe5a]     "platformName": "android",
+2022-07-31 07:00:09:371 [AndroidUiautomator2Driver@fe5a]     "appium:app": "/Users/saikrisv/Documents/git/appium-demo/VodQA.apk",
+2022-07-31 07:00:09:371 [AndroidUiautomator2Driver@fe5a]     "appium:automationName": "UIAutomator2",
+2022-07-31 07:00:09:371 [AndroidUiautomator2Driver@fe5a]     "appium:deviceName": "Android Emulator",
+2022-07-31 07:00:09:372 [AndroidUiautomator2Driver@fe5a]     "appium:newCommandTimeout": 700000
+2022-07-31 07:00:09:372 [AndroidUiautomator2Driver@fe5a]   },
+2022-07-31 07:00:09:372 [AndroidUiautomator2Driver@fe5a]   "firstMatch": [
+2022-07-31 07:00:09:372 [AndroidUiautomator2Driver@fe5a]     {}
+2022-07-31 07:00:09:372 [AndroidUiautomator2Driver@fe5a]   ]
+2022-07-31 07:00:09:372 [AndroidUiautomator2Driver@fe5a] }
+2022-07-31 07:00:09:381 [AndroidUiautomator2Driver@fe5a (c6f65655)] Session created with session id: c6f65655-ba3e-4311-8d0f-abd52616d6e9
+2022-07-31 07:00:09:383 [BaseDriver] Using local app '/Users/saikrisv/Documents/git/appium-demo/VodQA.apk'
+2022-07-31 07:00:09:465 [AndroidUiautomator2Driver@fe5a (c6f65655)] Checking whether app is actually present
+2022-07-31 07:00:09:487 [ADB] Found 2 'build-tools' folders under '/Users/saikrisv/Library/Android/sdk' (newest first):
+2022-07-31 07:00:09:487 [ADB]     /Users/saikrisv/Library/Android/sdk/build-tools/31.0.0
+2022-07-31 07:00:09:487 [ADB]     /Users/saikrisv/Library/Android/sdk/build-tools/30.0.2
+2022-07-31 07:00:09:489 [ADB] Using 'adb' from '/Users/saikrisv/Library/Android/sdk/platform-tools/adb'
+2022-07-31 07:00:09:489 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2022-07-31 07:00:09:512 [AndroidDriver] Retrieving device list
+2022-07-31 07:00:09:513 [ADB] Trying to find a connected android device
+2022-07-31 07:00:09:513 [ADB] Getting connected devices
+2022-07-31 07:00:09:531 [ADB] Connected devices: [{"udid":"4fd3f758","state":"device"}]
+2022-07-31 07:00:09:531 [AndroidDriver] Using device: 4fd3f758
+2022-07-31 07:00:09:533 [ADB] Using 'adb' from '/Users/saikrisv/Library/Android/sdk/platform-tools/adb'
+2022-07-31 07:00:09:533 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2022-07-31 07:00:09:544 [ADB] Setting device id to 4fd3f758
+2022-07-31 07:00:09:545 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell getprop ro.build.version.sdk'
+2022-07-31 07:00:09:606 [ADB] Current device property 'ro.build.version.sdk': 28
+2022-07-31 07:00:09:606 [ADB] Getting device platform version
+2022-07-31 07:00:09:606 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell getprop ro.build.version.release'
+2022-07-31 07:00:09:656 [ADB] Current device property 'ro.build.version.release': 9
+2022-07-31 07:00:09:656 [ADB] Device API level: 28
+2022-07-31 07:00:09:657 [AndroidUiautomator2Driver@fe5a (c6f65655)] Relaxing hidden api policy
+2022-07-31 07:00:09:657 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2022-07-31 07:00:09:904 [AndroidDriver] Parsing package and activity from app manifest
+2022-07-31 07:00:09:918 [ADB] Package name: 'com.vodqareactnative'
+2022-07-31 07:00:09:918 [ADB] Main activity name: 'com.vodqareactnative.MainActivity'
+2022-07-31 07:00:09:918 [AndroidDriver] Parsed package and activity are: com.vodqareactnative/com.vodqareactnative.MainActivity
+2022-07-31 07:00:09:919 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 wait-for-device'
+2022-07-31 07:00:09:931 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell echo ping'
+2022-07-31 07:00:09:974 [AndroidDriver] Pushing settings apk to device...
+2022-07-31 07:00:09:975 [ADB] Getting install status for io.appium.settings
+2022-07-31 07:00:09:976 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package io.appium.settings'
+2022-07-31 07:00:10:065 [ADB] 'io.appium.settings' is installed
+2022-07-31 07:00:10:065 [ADB] Getting package info for 'io.appium.settings'
+2022-07-31 07:00:10:066 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package io.appium.settings'
+2022-07-31 07:00:10:195 [ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('4.1.2' >= '4.1.2')
+2022-07-31 07:00:10:197 [ADB] There is no need to install/upgrade '/Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2022-07-31 07:00:10:202 [ADB] Getting IDs of all 'io.appium.settings' processes
+2022-07-31 07:00:10:203 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell 'pgrep --help; echo $?''
+2022-07-31 07:00:10:268 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell pgrep -f \(\[\[:blank:\]\]\|\^\)io\.appium\.settings\(\[\[:blank:\]\]\|\$\)'
+2022-07-31 07:00:10:355 [AndroidDriver] io.appium.settings is already running. There is no need to reset its permissions.
+2022-07-31 07:00:10:356 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell appops set io.appium.settings android:mock_location allow'
+2022-07-31 07:00:10:452 [Logcat] Starting logs capture with command: /Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 logcat -v threadtime
+2022-07-31 07:00:10:502 [AndroidUiautomator2Driver@fe5a (c6f65655)] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2022-07-31 07:00:10:503 [ADB] Forwarding system: 8200 to device: 6790
+2022-07-31 07:00:10:503 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 forward tcp:8200 tcp:6790'
+2022-07-31 07:00:10:524 [ADB] Getting install status for io.appium.uiautomator2.server
+2022-07-31 07:00:10:524 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package io.appium.uiautomator2.server'
+2022-07-31 07:00:10:596 [ADB] 'io.appium.uiautomator2.server' is installed
+2022-07-31 07:00:10:596 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2022-07-31 07:00:10:597 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package io.appium.uiautomator2.server'
+2022-07-31 07:00:11:132 [ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('5.6.2' >= '5.6.2')
+2022-07-31 07:00:11:133 [AndroidUiautomator2Driver@fe5a (c6f65655)] io.appium.uiautomator2.server installation state: sameVersionInstalled
+2022-07-31 07:00:11:133 [ADB] Checking app cert for /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.6.2.apk
+2022-07-31 07:00:11:191 [ADB] Using 'apksigner.jar' from '/Users/saikrisv/Library/Android/sdk/build-tools/31.0.0/lib/apksigner.jar'
+2022-07-31 07:00:11:193 [ADB] Starting apksigner: /usr/bin/java -Xmx1024M -Xss1m -jar /Users/saikrisv/Library/Android/sdk/build-tools/31.0.0/lib/apksigner.jar verify --print-certs /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.6.2.apk
+2022-07-31 07:00:12:459 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2022-07-31 07:00:12:459 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2022-07-31 07:00:12:459 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2022-07-31 07:00:12:459 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2022-07-31 07:00:12:459 [ADB] 
+2022-07-31 07:00:12:459 [ADB] sha256 hash did match for 'appium-uiautomator2-server-v5.6.2.apk'
+2022-07-31 07:00:12:460 [ADB] '/Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.6.2.apk' is signed with the default certificate
+2022-07-31 07:00:12:460 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2022-07-31 07:00:12:460 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package io.appium.uiautomator2.server.test'
+2022-07-31 07:00:12:562 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2022-07-31 07:00:12:562 [ADB] Checking app cert for /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2022-07-31 07:00:12:568 [ADB] Starting apksigner: /usr/bin/java -Xmx1024M -Xss1m -jar /Users/saikrisv/Library/Android/sdk/build-tools/31.0.0/lib/apksigner.jar verify --print-certs /Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2022-07-31 07:00:12:984 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2022-07-31 07:00:12:984 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2022-07-31 07:00:12:985 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2022-07-31 07:00:12:985 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2022-07-31 07:00:12:985 [ADB] 
+2022-07-31 07:00:12:985 [ADB] sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+2022-07-31 07:00:12:985 [ADB] '/Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+2022-07-31 07:00:12:985 [AndroidUiautomator2Driver@fe5a (c6f65655)] Server packages are not going to be (re)installed
+2022-07-31 07:00:12:989 [AndroidUiautomator2Driver@fe5a (c6f65655)] Waiting up to 30000ms for services to be available
+2022-07-31 07:00:12:989 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell pm list instrumentation'
+2022-07-31 07:00:13:065 [AndroidUiautomator2Driver@fe5a (c6f65655)] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2022-07-31 07:00:13:067 [ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2022-07-31 07:00:13:068 [ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2022-07-31 07:00:13:068 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2022-07-31 07:00:13:195 [ADB] Checking app cert for /Users/saikrisv/Documents/git/appium-demo/VodQA.apk
+2022-07-31 07:00:13:256 [ADB] Starting apksigner: /usr/bin/java -Xmx1024M -Xss1m -jar /Users/saikrisv/Library/Android/sdk/build-tools/31.0.0/lib/apksigner.jar verify --print-certs /Users/saikrisv/Documents/git/appium-demo/VodQA.apk
+2022-07-31 07:00:14:483 [ADB] apksigner stdout: Signer #1 certificate DN: CN=harshal b, OU=unit, O=org, L=neemuch, ST=madhya pradesh, C=IN
+2022-07-31 07:00:14:483 [ADB] Signer #1 certificate SHA-256 digest: 60fee96f11b9e68eff891226a703e242c906476eb96f1a8beb7a4d79b7dfcf7e
+2022-07-31 07:00:14:483 [ADB] Signer #1 certificate SHA-1 digest: cdcf695bf910cc5b36527845dc7e62bce2eb1ba9
+2022-07-31 07:00:14:483 [ADB] Signer #1 certificate MD5 digest: 89559ad57168ea9910d46195f4ebf776
+2022-07-31 07:00:14:483 [ADB] 
+2022-07-31 07:00:14:483 [ADB] '/Users/saikrisv/Documents/git/appium-demo/VodQA.apk' is signed with a non-default certificate
+2022-07-31 07:00:14:484 [ADB] Getting install status for com.vodqareactnative
+2022-07-31 07:00:14:484 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package com.vodqareactnative'
+2022-07-31 07:00:14:597 [ADB] 'com.vodqareactnative' is installed
+2022-07-31 07:00:14:597 [ADB] Getting package info for 'com.vodqareactnative'
+2022-07-31 07:00:14:597 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package com.vodqareactnative'
+2022-07-31 07:00:14:745 [ADB] The version name of the installed 'com.vodqareactnative' is greater or equal to the application version name ('1.0.0' >= '1.0.0')
+2022-07-31 07:00:14:745 [ADB] There is no need to install/upgrade '/Users/saikrisv/Documents/git/appium-demo/VodQA.apk'
+2022-07-31 07:00:14:746 [AndroidDriver] Performing fast reset on 'com.vodqareactnative'
+2022-07-31 07:00:14:746 [ADB] Getting install status for com.vodqareactnative
+2022-07-31 07:00:14:746 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys package com.vodqareactnative'
+2022-07-31 07:00:14:875 [ADB] 'com.vodqareactnative' is installed
+2022-07-31 07:00:14:876 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell am force-stop com.vodqareactnative'
+2022-07-31 07:00:14:990 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell pm clear com.vodqareactnative'
+2022-07-31 07:00:15:190 [AndroidDriver] Performed fast reset on the installed 'com.vodqareactnative' application (stop and clear)
+2022-07-31 07:00:15:191 [AndroidUiautomator2Driver@fe5a (c6f65655)] Performing shallow cleanup of automation leftovers
+2022-07-31 07:00:15:203 [AndroidUiautomator2Driver@fe5a (c6f65655)] No obsolete sessions have been detected (socket hang up)
+2022-07-31 07:00:15:204 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell am force-stop io.appium.uiautomator2.server.test'
+2022-07-31 07:00:15:285 [AndroidUiautomator2Driver@fe5a (c6f65655)] Starting UIAutomator2 server 5.6.2
+2022-07-31 07:00:15:286 [AndroidUiautomator2Driver@fe5a (c6f65655)] Using UIAutomator2 server from '/Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v5.6.2.apk' and test from '/Users/saikrisv/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2022-07-31 07:00:15:286 [AndroidUiautomator2Driver@fe5a (c6f65655)] Waiting up to 30000ms for UiAutomator2 to be online...
+2022-07-31 07:00:15:287 [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","4fd3f758","shell","am","instrument","-w","-e","disableAnalytics",true,"io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2022-07-31 07:00:15:295 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/status' to command name 'getStatus'
+2022-07-31 07:00:15:297 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2022-07-31 07:00:15:307 [AndroidUiautomator2Driver@fe5a (c6f65655)] socket hang up
+2022-07-31 07:00:16:309 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/status' to command name 'getStatus'
+2022-07-31 07:00:16:310 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2022-07-31 07:00:16:314 [AndroidUiautomator2Driver@fe5a (c6f65655)] socket hang up
+2022-07-31 07:00:16:482 [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2022-07-31 07:00:17:319 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/status' to command name 'getStatus'
+2022-07-31 07:00:17:319 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2022-07-31 07:00:17:328 [AndroidUiautomator2Driver@fe5a (c6f65655)] socket hang up
+2022-07-31 07:00:18:332 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/status' to command name 'getStatus'
+2022-07-31 07:00:18:332 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2022-07-31 07:00:18:446 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2022-07-31 07:00:18:447 [AndroidUiautomator2Driver@fe5a (c6f65655)] The initialization of the instrumentation process took 3161ms
+2022-07-31 07:00:18:447 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/session' to command name 'createSession'
+2022-07-31 07:00:18:448 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","automationName":"UIAutomator2","deviceName":"Android Emulator","newCommandTimeout":700000},"platformName":"android","app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","automationName":"UIAutomator2","deviceName":"4fd3f758","newCommandTimeout":700000,"deviceUDID":"4fd3f758","appPackage":"com.vodqareactnative"}],"alwaysMatch":{}}}
+2022-07-31 07:00:18:482 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":{"capabilities":{"firstMatch":[{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","automationName":"UIAutomator2","deviceName":"Android Emulator","newCommandTimeout":700000},"platformName":"android","app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","automationName":"UIAutomator2","deviceName":"4fd3f758","newCommandTimeout":700000,"deviceUDID":"4fd3f758","appPackage":"com.vodqareactnative"}],"alwaysMatch":{}},"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba"}}
+2022-07-31 07:00:18:482 [AndroidUiautomator2Driver@fe5a (c6f65655)] Determined the downstream protocol as 'W3C'
+2022-07-31 07:00:18:495 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba/appium/device/info] with no body
+2022-07-31 07:00:18:545 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":{"androidId":"20d83aa61172566d","apiVersion":"28","bluetooth":{"state":"ON"},"brand":"OnePlus","carrierName":"","displayDensity":392,"locale":"en_US","manufacturer":"OnePlus","model":"ONEPLUS A6000","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":1048576,"linkUpstreamBandwidthKbps":1048576,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-57,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":null,"isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"}],"platformVersion":"9","realDisplaySize":"1080x2280","timeZone":"Europe/London"}}
+2022-07-31 07:00:18:546 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys window'
+2022-07-31 07:00:18:679 [AndroidDriver] Screen already unlocked, doing nothing
+2022-07-31 07:00:18:679 [AndroidUiautomator2Driver@fe5a (c6f65655)] Starting 'com.vodqareactnative/com.vodqareactnative.MainActivity and waiting for 'com.vodqareactnative/com.vodqareactnative.MainActivity'
+2022-07-31 07:00:18:680 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell am start -W -n com.vodqareactnative/com.vodqareactnative.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2022-07-31 07:00:19:222 [ADB] Waiting up to 20000ms for activity matching pkg: 'com.vodqareactnative' and activity: 'com.vodqareactnative.MainActivity' to be focused
+2022-07-31 07:00:19:223 [ADB] Possible activities, to be checked: 'com.vodqareactnative.MainActivity', 'com.vodqareactnative.com.vodqareactnative.MainActivity'
+2022-07-31 07:00:19:223 [ADB] Getting focused package and activity
+2022-07-31 07:00:19:223 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell dumpsys window windows'
+2022-07-31 07:00:19:274 [ADB] Found package: 'com.vodqareactnative' and fully qualified activity name : 'com.vodqareactnative.MainActivity'
+2022-07-31 07:00:19:277 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba/appium/device/pixel_ratio] with no body
+2022-07-31 07:00:19:286 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":2.45}
+2022-07-31 07:00:19:287 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2022-07-31 07:00:19:287 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba/appium/device/system_bars] with no body
+2022-07-31 07:00:19:296 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":{"statusBar":80}}
+2022-07-31 07:00:19:296 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/window/current/size' to command name 'getWindowSize'
+2022-07-31 07:00:19:296 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba/window/current/size] with no body
+2022-07-31 07:00:19:306 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":{"height":2200,"width":1080}}
+2022-07-31 07:00:19:307 [AppiumDriver@c42c] New AndroidUiautomator2Driver session created successfully, session c6f65655-ba3e-4311-8d0f-abd52616d6e9 added to master session list
+2022-07-31 07:00:19:308 [AppiumDriver@c42c] Event 'newSessionStarted' logged at 1659250819308 (12:30:19 GMT+0530 (India Standard Time))
+2022-07-31 07:00:19:308 [AndroidUiautomator2Driver@fe5a (c6f65655)] Cached the protocol value 'W3C' for the new session c6f65655-ba3e-4311-8d0f-abd52616d6e9
+2022-07-31 07:00:19:309 [AndroidUiautomator2Driver@fe5a (c6f65655)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","automationName":"UIAutomator2","deviceName":"Android Emulator","newCommandTimeout":700000},"platformName":"android","app":"/Users/saikrisv/Documents/git/appium-demo/VodQA.apk","automationName":"UIAutomator2","deviceName":"4fd3f758","newCommandTimeout":700000,"deviceUDID":"4fd3f758","appPackage":"com.vodqareactnative","deviceApiLevel":28,"platformVersion":"9","deviceScreenSize":"1080x2280","deviceScreenDensity":392,"deviceModel":"ONEPLUS A6000","deviceManufacturer":"OnePlus","pixelRatio":2.45,"statBarHeight":80,"viewportRect":{"left":0,"top":80,"width":1080,"height":2120}}}
+2022-07-31 07:00:19:310 [HTTP] <-- POST /wd/hub/session 200 9949 ms - 948
+2022-07-31 07:00:19:310 [HTTP] 
+2022-07-31 07:00:19:432 [HTTP] --> POST /wd/hub/session/c6f65655-ba3e-4311-8d0f-abd52616d6e9/element
+2022-07-31 07:00:19:432 [HTTP] {"using":"accessibility id","value":"login"}
+2022-07-31 07:00:19:435 [AndroidUiautomator2Driver@fe5a (c6f65655)] Calling AppiumDriver.findElement() with args: ["accessibility id","login","c6f65655-ba3e-4311-8d0f-abd52616d6e9"]
+2022-07-31 07:00:19:436 [AndroidUiautomator2Driver@fe5a (c6f65655)] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2022-07-31 07:00:19:436 [AndroidUiautomator2Driver@fe5a (c6f65655)] Waiting up to 0 ms for condition
+2022-07-31 07:00:19:438 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/element' to command name 'findElement'
+2022-07-31 07:00:19:438 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba/element] with body: {"strategy":"accessibility id","selector":"login","context":"","multiple":false}
+2022-07-31 07:00:20:641 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":{"ELEMENT":"00000000-0000-004a-ffff-ffff0000003d","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-004a-ffff-ffff0000003d"}}
+2022-07-31 07:00:20:642 [AndroidUiautomator2Driver@fe5a (c6f65655)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-004a-ffff-ffff0000003d","ELEMENT":"00000000-0000-004a-ffff-ffff0000003d"}
+2022-07-31 07:00:20:642 [HTTP] <-- POST /wd/hub/session/c6f65655-ba3e-4311-8d0f-abd52616d6e9/element 200 1210 ms - 137
+2022-07-31 07:00:20:643 [HTTP] 
+2022-07-31 07:00:20:649 [HTTP] --> POST /wd/hub/session/c6f65655-ba3e-4311-8d0f-abd52616d6e9/element/00000000-0000-004a-ffff-ffff0000003d/click
+2022-07-31 07:00:20:649 [HTTP] {"id":"00000000-0000-004a-ffff-ffff0000003d"}
+2022-07-31 07:00:20:652 [AndroidUiautomator2Driver@fe5a (c6f65655)] Calling AppiumDriver.click() with args: ["00000000-0000-004a-ffff-ffff0000003d","c6f65655-ba3e-4311-8d0f-abd52616d6e9"]
+2022-07-31 07:00:20:652 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/element/00000000-0000-004a-ffff-ffff0000003d/click' to command name 'click'
+2022-07-31 07:00:20:653 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [POST /element/00000000-0000-004a-ffff-ffff0000003d/click] to [POST http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba/element/00000000-0000-004a-ffff-ffff0000003d/click] with body: {"element":"00000000-0000-004a-ffff-ffff0000003d"}
+2022-07-31 07:00:20:671 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":null}
+2022-07-31 07:00:20:672 [AndroidUiautomator2Driver@fe5a (c6f65655)] Responding to client with driver.click() result: null
+2022-07-31 07:00:20:672 [HTTP] <-- POST /wd/hub/session/c6f65655-ba3e-4311-8d0f-abd52616d6e9/element/00000000-0000-004a-ffff-ffff0000003d/click 200 23 ms - 14
+2022-07-31 07:00:20:673 [HTTP] 
+2022-07-31 07:00:20:682 [HTTP] --> DELETE /wd/hub/session/c6f65655-ba3e-4311-8d0f-abd52616d6e9
+2022-07-31 07:00:20:682 [HTTP] {}
+2022-07-31 07:00:20:683 [AndroidUiautomator2Driver@fe5a (c6f65655)] Calling AppiumDriver.deleteSession() with args: ["c6f65655-ba3e-4311-8d0f-abd52616d6e9"]
+2022-07-31 07:00:20:683 [AppiumDriver@c42c] Event 'quitSessionRequested' logged at 1659250820683 (12:30:20 GMT+0530 (India Standard Time))
+2022-07-31 07:00:20:683 [AppiumDriver@c42c] Removing session c6f65655-ba3e-4311-8d0f-abd52616d6e9 from our master session list
+2022-07-31 07:00:20:684 [AndroidUiautomator2Driver@fe5a (c6f65655)] Deleting UiAutomator2 session
+2022-07-31 07:00:20:684 [AndroidUiautomator2Driver@fe5a (c6f65655)] Deleting UiAutomator2 server session
+2022-07-31 07:00:20:685 [AndroidUiautomator2Driver@fe5a (c6f65655)] Matched '/' to command name 'deleteSession'
+2022-07-31 07:00:20:685 [AndroidUiautomator2Driver@fe5a (c6f65655)] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba] with no body
+2022-07-31 07:00:20:695 [AndroidUiautomator2Driver@fe5a (c6f65655)] Got response with status 200: {"sessionId":"3dd3e8fd-f0f9-4e85-96bd-81fdb149fbba","value":null}
+2022-07-31 07:00:20:695 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell am force-stop com.vodqareactnative'
+2022-07-31 07:00:20:759 [Logcat] Stopping logcat capture
+2022-07-31 07:00:20:762 [ADB] Removing forwarded port socket connection: 8200 
+2022-07-31 07:00:20:763 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 forward --remove tcp:8200'
+2022-07-31 07:00:20:774 [AndroidUiautomator2Driver@fe5a (c6f65655)] Restoring hidden api policy to the device default configuration
+2022-07-31 07:00:20:775 [ADB] Running '/Users/saikrisv/Library/Android/sdk/platform-tools/adb -P 5037 -s 4fd3f758 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2022-07-31 07:00:20:849 [AppiumDriver@c42c] Event 'quitSessionFinished' logged at 1659250820849 (12:30:20 GMT+0530 (India Standard Time))
+2022-07-31 07:00:20:849 [AppiumDriver@c42c] Received response: null
+2022-07-31 07:00:20:850 [AppiumDriver@c42c] But deleting session, so not returning
+2022-07-31 07:00:20:850 [AppiumDriver@c42c] Responding to client with driver.deleteSession() result: null
+2022-07-31 07:00:20:851 [HTTP] <-- DELETE /wd/hub/session/c6f65655-ba3e-4311-8d0f-abd52616d6e9 200 168 ms - 14
+2022-07-31 07:00:20:851 [HTTP] 
+2022-07-31 07:00:21:542 [Instrumentation] .
+2022-07-31 07:00:21:549 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at Socket._writeGeneric (node:net:780:11)
+    at Socket._write (node:net:792:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at Socket.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:406:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:139:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:177:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:164:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at DerivedLogger.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.<computed> [as debug] (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/create-logger.js:81:14)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/appium/lib/logsink.js:210:5)
+    at EventEmitter.emit (node:events:394:28)
+    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/appium/node_modules/npmlog/lib/log.js:251:8)
+2022-07-31 07:00:21:551 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at Socket._writeGeneric (node:net:780:11)
+    at Socket._write (node:net:792:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at Socket.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:406:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:139:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:177:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:164:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at DerivedLogger.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:394:28)
+    at process.emit (/usr/local/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
+2022-07-31 07:00:21:553 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at Socket._writeGeneric (node:net:780:11)
+    at Socket._write (node:net:792:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at Socket.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:406:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:139:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:177:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:164:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at DerivedLogger.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:394:28)
+    at process.emit (/usr/local/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
+2022-07-31 07:00:21:555 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:164:15)
+    at writeGeneric (node:internal/stream_base_commons:155:3)
+    at Socket._writeGeneric (node:net:780:11)
+    at Socket._write (node:net:792:8)
+    at writeOrBuffer (node:internal/streams/writable:389:12)
+    at _write (node:internal/streams/writable:330:10)
+    at Socket.Writable.write (node:internal/streams/writable:334:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:51:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:406:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:139:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:177:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_transform.js:164:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:409:139)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:398:5)
+    at DerivedLogger.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/_stream_writable.js:307:11)
+    at DerivedLogger.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:216:12)
+    at ExceptionHandler._uncaughtException (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/exception-handler.js:220:17)
+    at process.emit (node:events:394:28)
+    at process.emit (/usr/local/lib/node_modules/appium/node_modules/source-map-support/source-map-support.js:516:21)
