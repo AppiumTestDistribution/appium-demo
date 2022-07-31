@@ -1,5 +1,6 @@
 package com.atd.test;
 
+import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -13,6 +14,8 @@ import org.openqa.selenium.interactions.Pause;
 import org.openqa.selenium.interactions.PointerInput;
 import org.openqa.selenium.interactions.Sequence;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebElement;
+import org.openqa.selenium.remote.http.HttpMethod;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
@@ -37,8 +40,9 @@ public class SampleTest {
                 .usingAnyFreePort()
                 .withTimeout(Duration.ofSeconds(60))
                 .withLogFile(new File(System.getProperty("user.dir") + "/appiumServerLogs.txt"))
-                .withArgument(GeneralServerFlag.BASEPATH, "/wd/hub"));
-            service.clearOutPutStreams();
+                                 .withArgument(GeneralServerFlag.RELAXED_SECURITY)
+                .withArgument(GeneralServerFlag.BASEPATH, "/wd/hub")
+                         .withArgument(GeneralServerFlag.USE_PLUGINS, "element-wait"));
             service.start();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
@@ -51,7 +55,6 @@ public class SampleTest {
 
     @Test
     public void horizontalSwipeTest() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("login"))).click();
         wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("slider1"))).click();
         WebElement slider = wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("slider")));
@@ -72,6 +75,43 @@ public class SampleTest {
 
         driver.perform(Collections.singletonList(sequence));
 
+    }
+
+    @Test
+    public void dragTest() {
+        wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("login"))).click();
+        wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("dragAndDrop"))).click();
+        final WebElement dragMe = wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("dragMe")));
+        final Point dropzone = wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("dropzone"))).getLocation();
+
+        driver.executeScript("mobile: dragGesture", ImmutableMap.of(
+                "elementId", dragMe,
+                "endX", dropzone.x + 100,
+                "endY", dropzone.y + 100
+        ));
+    }
+
+    @Test
+    public void dragAndDropWithPlugin() {
+        wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("login"))).click();
+        wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("dragAndDrop"))).click();
+        RemoteWebElement source = (RemoteWebElement) wait
+                .until(elementToBeClickable(AppiumBy.accessibilityId("dragMe")));
+        RemoteWebElement destination = (RemoteWebElement) wait
+                .until(elementToBeClickable(AppiumBy.accessibilityId("dropzone")));
+
+        driver.addCommand(HttpMethod.POST, String.format("/session/%s/plugin/actions/dragAndDrop",
+                driver.getSessionId()), "dragAndDrop");
+        driver.execute("dragAndDrop", ImmutableMap.of("sourceId", source.getId(), "destinationId", destination.getId()));
+    }
+
+    @Test
+    public void shellTest() {
+        String response = (String) driver.executeScript("mobile: shell", ImmutableMap.of(
+                "command", "dumpsys",
+                "args","cpuinfo"
+        ));
+        System.out.println(response);
     }
 
     @AfterSuite
