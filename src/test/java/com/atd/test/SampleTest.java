@@ -35,14 +35,13 @@ public class SampleTest {
     public void setUp() throws MalformedURLException {
         // Start server once before all tests //
         // Command-timeout 60 seconds //
-        service =
-                 AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+        service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
                 .usingAnyFreePort()
                 .withTimeout(Duration.ofSeconds(60))
                 .withLogFile(new File(System.getProperty("user.dir") + "/appiumServerLogs.txt"))
                                  .withArgument(GeneralServerFlag.RELAXED_SECURITY)
                 .withArgument(GeneralServerFlag.BASEPATH, "/wd/hub")
-                         .withArgument(GeneralServerFlag.USE_PLUGINS, "element-wait"));
+                         .withArgument(GeneralServerFlag.USE_PLUGINS, "gestures"));
             service.start();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
