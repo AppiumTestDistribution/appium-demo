@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="2" name="Appium parallel test execution" parallel="tests">
+    <test name="Device1">
+        <classes>
+            <class name="com.atd.test.SampleTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Device2">
+        <classes>
+            <class name="com.atd.test.SampleTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Device3">
+        <classes>
+            <class name="com.atd.test.SampleTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Device4">
+        <classes>
+            <class name="com.atd.test.SampleTest">
+            </class>
+        </classes>
+    </test>
+</suite> <!-- TestNG Forum -->

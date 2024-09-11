@@ -3,9 +3,9 @@ package com.atd.test;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import io.appium.java_client.android.options.UiAutomator2Options;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.options.XCUITestOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -14,27 +14,23 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 
 public class SampleTest {
     public AppiumDriver driver;
-    WebDriverWait wait;
-
     @BeforeClass
     public void setUp() throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android Emulator");
-        capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 700000);
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
-        capabilities.setCapability(MobileCapabilityType.APP, System.getProperty("user.dir") + "/VodQA.apk");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+        UiAutomator2Options options = new UiAutomator2Options();
+        options.setDeviceName("Android Emulator");
+        options.setNewCommandTimeout(Duration.ofSeconds(700000));
+        options.setAutomationName("UIAutomator2");
+        options.setApp(System.getProperty("user.dir") + "/VodQA.apk");
+        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
     }
 
     @Test
     public void SampleTest() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        wait.until(presenceOfElementLocated(AppiumBy.accessibilityId("login"))).click();
+        driver.findElement(AppiumBy.accessibilityId("login")).click();
     }
 
     @AfterClass
@@ -42,5 +38,13 @@ public class SampleTest {
         driver.quit();
     }
 
-
+    void iOSDriverCreation() throws MalformedURLException {
+        XCUITestOptions options = new XCUITestOptions();
+        options.setApp("https://github.com/AppiumTestDistribution/appium-demo/blob/main/vodqa.zip?raw=true");
+        options.setDeviceName("iPhone 14 Pro");
+        options.setPlatformName("iOS");
+        options.setPlatformVersion("16.1");
+        options.setAutomationName("XCuiTest");
+        driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),options);
+    }
 }
