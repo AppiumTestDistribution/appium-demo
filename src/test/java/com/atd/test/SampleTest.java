@@ -1,23 +1,23 @@
 package com.atd.test;
 
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.time.Duration;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.time.Duration;
-
-
 
 public class SampleTest {
     public AppiumDriver driver;
+
     @BeforeClass
     public void setUp() throws MalformedURLException {
         UiAutomator2Options options = new UiAutomator2Options();
@@ -25,11 +25,11 @@ public class SampleTest {
         options.setNewCommandTimeout(Duration.ofSeconds(700000));
         options.setAutomationName("UIAutomator2");
         options.setApp(System.getProperty("user.dir") + "/VodQA.apk");
-        driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
+        driver = new AndroidDriver(URI.create("http://127.0.0.1:4723/wd/hub").toURL(), options);
     }
 
     @Test
-    public void SampleTest() {
+    public void demoTest() {
         driver.findElement(AppiumBy.accessibilityId("login")).click();
     }
 
@@ -45,6 +45,6 @@ public class SampleTest {
         options.setPlatformName("iOS");
         options.setPlatformVersion("16.1");
         options.setAutomationName("XCuiTest");
-        driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"),options);
+        driver = new IOSDriver(URI.create("http://127.0.0.1:4723/wd/hub").toURL(), options);
     }
 }
